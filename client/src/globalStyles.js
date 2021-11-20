@@ -23,10 +23,9 @@ export const FullBackground = styled.div`
 `
 
 export const Container = styled.div`
+  position: absolute;
   width: 100%;
-  max-width: 800px;
-  height: 600px;
-  border-radius: 10px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,10 +34,16 @@ export const Container = styled.div`
 export const Button = styled.button`
   padding: 10px 14px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
   transition: .3s;
+`
+
+export const Input = styled.input`
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px 14px;
 `
 
 export default GlobalStyle;
