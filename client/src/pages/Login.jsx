@@ -24,7 +24,7 @@ const Login = ({ data }) => {
 
       <RegisterContainer>
         <RegisterForm>
-          <Logo />
+          <Logo h1Size='36px' h2Size='24px' mgBottom='35px'/>
 
           {data.map(({id, placeholder, iconClass}) => {
             return (
