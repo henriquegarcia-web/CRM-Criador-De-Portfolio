@@ -7,7 +7,7 @@ import {
 
 export const UserData = {
   name: 'Henrique Garcia',
-  email: 'https.henriquegarcia@gmail.com',
+  email: 'https.henriquegarcia',
   senha: 'senha',
   image: UserImage,
   userMenu: [

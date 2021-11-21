@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Access from './pages/Access';
-import Panel from './pages/Panel';
-import Page from './pages/Page';
+import Home from './pages/Home';      // Página da HOME
+import Access from './pages/Access';  // Página de ACESSO (lOGIN e CADASTRO)
+import Panel from './pages/Panel';    // Página do PAINEL
+import Page from './pages/Page';      // PÁGINA
 
 import GlobalStyle from './globalStyles';
 
-import { AccessData } from './data/AccessData/data'
+import { AccessData } from './data/AccessData/data' // Import DATA de ACESSO
 
 function App() {
   return (

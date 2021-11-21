@@ -2,18 +2,18 @@ import {
   FiUser,           //  Usuário
   FiCoffee,         //  Xícara de café
   FiLink,           //  Link
-  FiTrash,          //  Lixeira
+  // FiTrash,          //  Lixeira
   FiSettings,       //  Engrenagem
-  FiSearch,         //  Lupa
+  // FiSearch,         //  Lupa
   FiGlobe,          //  Globlo (Usado para linguagem)
   FiSidebar,        //  Usado como Header e Footer
   FiTrello,         //  Usado como Assets
   FiLayout,         //  Usado como Árvore Principal
   FiMaximize,       //  Usado para função de full-screen
-  FiX,              //  Circulo com X
-  FiHelpCircle,     //  Circulo com ?
-  FiAlertTriangle,  //  Triângulo com !
-  FiLogOut,         //  Símbolo de sair
+  // FiX,              //  Circulo com X
+  // FiHelpCircle,     //  Circulo com ?
+  // FiAlertTriangle,  //  Triângulo com !
+  // FiLogOut,         //  Símbolo de sair
   FiBell,           //  Sino para Notificações
 } from 'react-icons/fi';
 

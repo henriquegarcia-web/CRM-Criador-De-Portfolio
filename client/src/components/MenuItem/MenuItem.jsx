@@ -6,16 +6,14 @@ import {
 
 const MenuItem = ({ title, subItems }) => {
 
-  const selectSubItem = (eve) => {
-
-    // document.querySelectorAll('.sub_item').classList.remove('selected')
+  const selectSubItem = (e) => {
     Array.from(document.querySelectorAll('.sub_item')).forEach((subItem) => {
       if (subItem.classList.contains('selected')) {
         subItem.classList.remove('selected')
       }
       
     })
-    eve.target.classList.add('selected')
+    e.target.classList.add('selected')
   }
 
   return (

@@ -1,14 +1,8 @@
 import styled from "styled-components";
 
-import UserImage from '../assets/UserImage.jpg';
+// ---------------- PAINEL GENERAL
 
-import {
-  HorizontalLimiter
-} from '../globalStyles';
-
-export const PanelContainer = styled.div`
-
-`
+export const PanelContainer = styled.div``
 
 export const PanelWrapper = styled.div`
   width: 100%;
@@ -16,12 +10,6 @@ export const PanelWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
-
-export const PanelLimiter = styled(HorizontalLimiter)`
-  height: fit-content;
-  display: flex;
-`
-
 
 // ---------------- PAINEL MENU
 
@@ -66,7 +54,6 @@ export const HeaderMenu = styled.div`
 
   h3 {
     color: rgba(255, 255, 255, 0.9);
-    /* text-transform: uppercase; */
     margin-top: 50px;
     font-size: 15px;
     font-weight: 400;

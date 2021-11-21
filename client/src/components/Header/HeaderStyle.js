@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-import {
-  HorizontalLimiter
-} from '../../globalStyles';
-
 // ------------------------ HEADER
 
 export const HeaderContainer = styled.div`
@@ -14,12 +10,6 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   height: 50px;
   padding: 0 30px;
-`
-
-export const HeaderLimiter = styled(HorizontalLimiter)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `
 
 // ------------------------ SETTINGS

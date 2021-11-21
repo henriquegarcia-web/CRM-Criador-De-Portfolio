@@ -5,9 +5,7 @@ import {
   Container
 } from '../globalStyles';
 
-export const HomePage = styled.div`
-  
-`
+export const HomePage = styled.div``
 
 export const HomeContainer = styled(Container)`
 

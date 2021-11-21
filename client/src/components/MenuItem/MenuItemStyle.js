@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-// import {
-//   HorizontalLimiter
-// } from '../../globalStyles';
-
 export const MenuItemContainer = styled.div`
   width: 100%;
   margin-bottom: 25px;

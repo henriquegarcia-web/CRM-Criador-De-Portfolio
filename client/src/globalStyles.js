@@ -89,9 +89,4 @@ export const Input = styled.input`
   padding: 10px 16px;
 `
 
-export const HorizontalLimiter = styled.div`
-  width: 100%;
-  max-width: 1800px;
-`
-
 export default GlobalStyle;

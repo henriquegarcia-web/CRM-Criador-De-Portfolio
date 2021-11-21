@@ -6,9 +6,7 @@ import {
   Button
 } from '../globalStyles';
 
-export const AccessPage = styled(Container)` // Pega os padrões do Container
-  
-`
+export const AccessPage = styled(Container)`` // Pega os padrões do Container
 
 export const AccessForm = styled.form`
   position: absolute; 
@@ -18,7 +16,6 @@ export const AccessForm = styled.form`
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 0 15px rgba(37, 47, 62, 0.1);
-  /* background: rgba(37, 47, 62, 0.01); */
 `
 
 export const AccessFormHeader = styled.div`

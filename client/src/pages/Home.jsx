@@ -4,14 +4,13 @@ import {
   HomeContainer,
   HomePage,
   HomeButton
-} from './HomeStyle'
+} from './HomeStyle' // Import de estilos próprios
 
 import {
-  FullBackground,
-  Button
-} from '../globalStyles'
+  FullBackground
+} from '../globalStyles' // Import de estilos globais
 
-import { HomeData } from '../data/HomeData/data'
+import { HomeData } from '../data/HomeData/data' // Import DATA da HOME
 
 const Home = () => {
   return (
