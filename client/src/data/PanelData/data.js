@@ -1,39 +1,85 @@
+import {
+  FiUser,           //  Usuário
+  FiCoffee,         //  Xícara de café
+  FiLink,           //  Link
+  FiTrash,          //  Lixeira
+  FiSettings,       //  Engrenagem
+  FiSearch,         //  Lupa
+  FiGlobe,          //  Globlo (Usado para linguagem)
+  FiSidebar,        //  Usado como Header e Footer
+  FiTrello,         //  Usado como Assets
+  FiLayout,         //  Usado como Árvore Principal
+  FiMaximize,       //  Usado para função de full-screen
+  FiX,              //  Circulo com X
+  FiHelpCircle,     //  Circulo com ?
+  FiAlertTriangle,  //  Triângulo com !
+  FiLogOut,         //  Símbolo de sair
+  FiBell,           //  Sino para Notificações
+} from 'react-icons/fi';
+
 export const PanelData = {
+  settings: [
+    {
+      id: 'settings',
+      icon: <FiSettings />,
+      action: ''
+    },
+    {
+      id: 'fullscreen-mode',
+      icon: <FiMaximize />,
+      action: ''
+    },
+    {
+      id: 'notifications',
+      icon: <FiBell />,
+      action: ''
+    },
+    {
+      id: 'language',
+      icon: <FiGlobe />,
+      action: ''
+    },
+  ],
   menus: [
     {
       id: 'InputGeneral',
       title: 'General',
-      iconClass: 'fas fa-user-cog',
       subItems: [
         {
-          title: 'Info. Pessoais'
+          title: 'Info. Pessoais',
+          icon: <FiUser />
         },
         {
-          title: 'Exp. Profissionais'
+          title: 'Exp. Profissionais',
+          icon: <FiCoffee />
         },
         {
-          title: 'Currículo'
+          title: 'Links Externos',
+          icon: <FiLink />
         }
       ]
     },
     {
       id: 'InputEstilizacao',
       title: 'Estilização',
-      iconClass: 'fas fa-pencil-ruler',
       subItems: [
         {
-          title: 'Árvore Principal'
+          title: 'Árvore Principal',
+          icon: <FiLayout />
         },
         {
-          title: 'Header'
+          title: 'Header',
+          icon: <FiSidebar />
         },
         {
-          title: 'Assets'
+          title: 'Assets',
+          icon: <FiTrello />
         },
         {
-          title: 'Footer'
+          title: 'Footer',
+          icon: <FiSidebar />
         }
       ]
     }
   ]
-}
+};

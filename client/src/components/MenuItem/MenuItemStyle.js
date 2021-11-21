@@ -6,9 +6,7 @@ import styled from "styled-components";
 
 export const MenuItemContainer = styled.div`
   width: 100%;
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: .2s;
+  margin-bottom: 25px;
 
   .menu_item__category {
     height: 40px;
@@ -16,53 +14,49 @@ export const MenuItemContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
     margin-bottom: 5px;
 
-    .main_icon {
-      color: rgba(0, 0, 0, 0.8);
-      font-size: 18px;
-      margin-right: 10px;
-      transition: .2s;
-    }
-
     p {
-      color: rgba(0, 0, 0, 0.8);
-      margin-right: auto;
-      font-size: 18px;
-      font-weight: 500;
-      transition: .2s;
-    }
-
-    .icon {
-      color: rgba(0, 0, 0, 0.8);
-      font-size: 18px;
+      color: rgba(255, 255, 255, 0.90);
+      font-size: 16px;
+      font-weight: 400;
       transition: .2s;
     }
   }
 
-  .menu_item__sub_items {
-    /* padding: 10px 25px; */
-    
+  .menu_item__sub_items {    
     .sub_item {
-      /* margin-bottom: 10px; */
-      transition: .2s;
+      display: flex;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
       cursor: pointer;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
+      transition: .2s;
 
       &:hover {
-        background: rgba(0, 0, 0, 0.03);
-      }
-    }
-  }
+        background: rgba(27, 35, 48, 0.6);
+        color: rgba(255, 255, 255, 0.95);
 
-  &:hover {
-    .main_icon, p, .icon {
-      color: rgba(0, 0, 0, 1);
+        svg {
+          color: rgba(255, 255, 255, 0.95);
+        }
+      }
+
+      &.selected {
+        background: rgba(27, 35, 48, 0.6);
+        color: rgba(255, 255, 255, 0.95);
+      }
+
+      svg {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        margin-right: 10px;
+        transition: .2s;
+        pointer-events: none;
+      }
     }
   }
 `

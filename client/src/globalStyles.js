@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
   }
+
+  :root {
+    --dark-grey: #1B2330; // rgba(27, 35, 48, 0.8)
+    --grey: #252F3E; // rgba(37, 47, 62, 0.8)
+    --light-grey: #d1d3d5; // rgba(209, 211, 213, 0.8)
+  }
 `
 
 export const FullBackground = styled.div`
@@ -31,19 +37,56 @@ export const Container = styled.div`
   justify-content: center;
 `
 
-export const Button = styled.button`
-  padding: 10px 14px;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: .3s;
+export const Button = styled.div`
+  .btn {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .btn svg rect {
+    stroke: var(--grey);
+    stroke-width: 2;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+  }
+
+  .btn span{
+    color: var(--grey);
+  }
+
+  .btn:hover svg rect {
+    stroke-width: 2;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+  }
 `
 
 export const Input = styled.input`
   font-size: 18px;
   font-weight: 300;
-  padding: 10px 14px;
+  padding: 10px 16px;
 `
 
 export const HorizontalLimiter = styled.div`
