@@ -1,10 +1,12 @@
 import React from 'react'
 
+import {
+  RenderedPage
+} from './PageStyle'
+
 const Page = () => {
   return (
-    <div>
-      PAGE
-    </div>
+    <RenderedPage></RenderedPage>
   )
 }
 

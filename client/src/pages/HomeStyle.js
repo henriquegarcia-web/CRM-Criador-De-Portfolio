@@ -5,9 +5,7 @@ import {
   Container
 } from '../globalStyles';
 
-export const HomePage = styled.div`
-  
-`
+export const HomePage = styled.div``
 
 export const HomeContainer = styled(Container)`
 
@@ -16,6 +14,8 @@ export const HomeContainer = styled(Container)`
       font-weight: 700;
       font-size: 50px;
       letter-spacing: 1px;
+      text-align: center;
+      color: var(--grey);
     }
   }
 
@@ -26,14 +26,4 @@ export const HomeContainer = styled(Container)`
   }
 `
 
-export const HomeButton = styled(Button)`
-  margin: 0 10px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  border-radius: 8px;
-  background: transparent;
-
-  &:hover {
-    background: black;
-    color: white;
-  }
-`
+export const HomeButton = styled(Button)``
