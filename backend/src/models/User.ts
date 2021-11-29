@@ -4,6 +4,7 @@ const modelSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
+  photo: String,
   token: String
 })
 

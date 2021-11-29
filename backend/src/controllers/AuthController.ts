@@ -1,7 +1,16 @@
 import { Request, Response } from 'express'
 
+const { v4: uuid } = require('uuid')
+const jimp = require('jimp')
 const bcrypt = require('bcrypt')
 const User = require('../models/User')
+
+const addImage = async buffer => {
+  const newName = `${uuid()}.jpg`
+  const tmpImg = await jimp.read(buffer)
+  tmpImg.cover(500, 500).quality(80).write(`../client/public/media/${newName}`)
+  return newName
+}
 
 class AuthController {
   async signIn(req: Request, res: Response): Promise<Response> {
@@ -42,10 +51,19 @@ class AuthController {
     const hash = (Date.now() + Math.random()).toString()
     const token = await bcrypt.hash(hash, 10)
 
+    let photoName
+    if (req.files) {
+      const { file } = req.files
+      if (['image/jpeg', 'image/jpg', 'image/png'].includes(file.mimetype)) {
+        photoName = await addImage(file.data)
+      }
+    }
+
     const user = new User({
       name,
       email,
       password: passwordHash,
+      photo: photoName,
       token
     })
 

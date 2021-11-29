@@ -1,26 +1,14 @@
-const { checkSchema } = require('express-validator')
+import { body, checkSchema } from 'express-validator'
 
 class UserValidator {
-  signUp() {
-    checkSchema({
-      name: {
-        trim: true,
-        isLength: {
-          options: { min: 2 }
-        },
-        errorMessage: 'Nome precisa ter pelo menos 2 caracteres'
-      },
-      email: {
-        isEmail: true,
-        errorMessage: 'E-mail inválido'
-      },
-      password: {
-        isLength: {
-          options: { min: 2 }
-        },
-        errorMessage: 'Senha precisa ter pelo menos 2 caracteres'
-      }
-    })
+  async signUp(req, res, next) {
+    body('name').isLength({ min: 5 })
+
+    body('email').isEmail()
+
+    body('password').isLength({ min: 25 })
+
+    next()
   }
 }
 

@@ -18,7 +18,7 @@ routes.get('/', (req, res) => {
 
 routes.post('/users/signin', authController.signIn)
 
-routes.post('/users', userValidator.signUp, authController.signUp)
+routes.post('/users', authController.signUp)
 routes.get('/users', usersController.getAllUsers)
 
 export { routes }
