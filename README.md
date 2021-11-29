@@ -11,8 +11,8 @@ O projeto visa facilitar a exposição do perfil profissional na web.
 
 #### Tenologias
 
-Para o **front-end**: React, Redux, Axios e Styled Components. 
-Para o **back-end**: Não definido
+- Para o **front-end**: React, Redux, Axios e Styled Components. 
+- Para o **back-end**: Node, Typescript, Express e seus plugins, Jimp, Mongoose e Bcrypt
 
 #### Desenvolvimento
 
